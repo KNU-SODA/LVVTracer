@@ -18,7 +18,7 @@ def test_lvv_sha256():
         target_function(args)
 ```
 
-*R7. LVVTracer should count the number of value changes for each local variables in “target_function()”.
+* R7. LVVTracer should count the number of value changes for each local variables in “target_function()”.
 * R8. There is a member function called “getLVVmap()” in LVVTracer, which returns a dictionary of {“var1”: change_count1, “var2”: change_count2, …}.  LVVTracer should count the changes of local variables ONLY in “target_function()”.
 
 
