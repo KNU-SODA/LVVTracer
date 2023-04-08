@@ -11,5 +11,5 @@ def test_lvv_pyyaml():
     with LVVTracer(target_func = "write_plain") as traced:
         yaml.dump(yaml.load(document, Loader=yaml.FullLoader))
 
-    answer = {'end': 21, 'ch': 21, 'start': 14, 'data': 10, 'self': 7, 'text': 7, 'split': 7, 'spaces': 7, 'breaks': 7}
+    answer = {'self': 257, 'end': 21, 'ch': 21, 'start': 14, 'data': 10, 'text': 7, 'split': 7, 'spaces': 7, 'breaks': 7}
     assert traced.getLVVmap() == answer

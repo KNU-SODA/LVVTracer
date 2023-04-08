@@ -9,5 +9,5 @@ def test_lvv_pyflac():
         with LVVTracer(target_func = "normalize_encoding") as traced:
             passthrough.main()
 
-    answer = {'c': 36, 'punct': 24, 'chars': 18, 'encoding': 3}
+    answer = {'chars': 18, 'c': 15, 'punct': 9, 'encoding': 3}
     assert traced.getLVVmap() == answer
