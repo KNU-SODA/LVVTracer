@@ -16,7 +16,7 @@ from LVVTracer import LVVTracer
 def test_lvv_sha256():
     with LVVTracer(target_func = "target_function") as traced:
         func1(args)
-		func2(args2)
+	func2(args2)
 ```
 
 * R7. LVVTracer should count the number of value changes for each local variables in “target_function()”.
