@@ -15,11 +15,13 @@ from LVVTracer import LVVTracer
 
 def test_lvv_sha256():
     with LVVTracer(target_func = "target_function") as traced:
-        target_function(args)
+        func1(args)
+		func2(args2)
 ```
 
 * R7. LVVTracer should count the number of value changes for each local variables in “target_function()”.
 * R8. There is a member function called “getLVVmap()” in LVVTracer, which returns a dictionary of {“var1”: change_count1, “var2”: change_count2, …}.  LVVTracer should count the changes of local variables ONLY in “target_function()”.
+* R9. "target_function" can be called multiple times. Everytime "target_function" returns, stored values for local variables should be cleared.
 
 
 
