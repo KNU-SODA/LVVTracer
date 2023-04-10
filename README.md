@@ -6,7 +6,7 @@ Your submission must satisfy the following requirements:
 * R1. Shall initialize your assignment repository from https://classroom.github.com/a/dVoUv6LC
 * R2. Write your `LVVTracer.py` in the repository.
 * R3. Test your `LVVTracer.py` by using `pytest`.
-* R4. Your repository name should be `{student_id}-LVVTracer`.
+* R4. ~~Your repository name should be `{student_id}-LVVTracer`.~~ You need to let your TA know your repository URL and your student ID together.
 * R5. `LVVTracer` class should be defined in the `LVVTracer.py`
 * R6. The above class is tested as:
 
